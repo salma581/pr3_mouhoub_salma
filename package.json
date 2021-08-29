@@ -1,0 +1,21 @@
+{
+  "name": "pr3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/scss/style.scss:./sass/css/style.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salma581/pr3_mouhoub_salma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salma581/pr3_mouhoub_salma/issues"
+  },
+  "homepage": "https://github.com/salma581/pr3_mouhoub_salma#readme"
+}
