@@ -578,18 +578,5 @@ footer h3 {
   color: #e6e6e6;
   font-weight: normal;
 }
-footer a {
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
-  color: #FFF;
-}
-footer .footer__logo {
-  font-family: "Shrikhand", cursive;
-  font-weight: normal;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
 
 /*# sourceMappingURL=style.css.map */
