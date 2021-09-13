@@ -343,7 +343,7 @@ h1 {
     border-top-right-radius: 30px;
     position: relative;
     z-index: 1;
-
+   
     .far {
         align-self: flex-end;
     }
@@ -351,7 +351,67 @@ h1 {
     h2 {
         margin-bottom: 35px;
     }
-}
+    @keyframes heart__full__opacity {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0.5;
+            background-image: linear-gradient(100deg, $colour-primary, $colour-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        100% {
+            opacity: 1;
+            background-image: linear-gradient(100deg, $colour-primary, $colour-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    @keyframes heart__empty__opacity1 {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    .heart {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        
+
+        &__1 {
+            position: relative;
+
+            &:hover {
+                animation: heart__empty__opacity1 1s;
+            }
+        }
+
+        &__2 {
+            position: absolute;
+            top: 0px;
+            opacity: 0;
+            color: #FFF;
+
+            &:hover {
+                animation: heart__full__opacity 1s forwards;
+            }
+        }
+    }
+     
+} 
+
 
 .entrees {
     margin-bottom: 27px;
@@ -416,10 +476,6 @@ h1 {
     justify-content: space-between;
     overflow: hidden;
 
-    // @media screen and (min-width: 375px) and (max-width: 400px) {
-    //     min-width: 250px;
-    //     max-width: 315px;
-    // }
     @media screen and (min-width: 400px) and (max-width: 1024px) {
         max-width: none;
     }
